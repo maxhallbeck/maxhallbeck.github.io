@@ -1,0 +1,17 @@
+nav{
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-evenly;
+}
+a{
+    color: yellow;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: yellow;
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 100px;
+}
