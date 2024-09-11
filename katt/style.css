@@ -1,0 +1,32 @@
+img {
+    float: left;
+    width: 500px;
+    height: 700px;
+}
+p {
+    float: left;
+    color: #ffffff;
+    margin: 12px;
+
+}
+ .container {
+    display: flex;
+    flex flex-wrap:nowrap;
+    align-items: flex :start;
+    max-width: 1000px;
+    margin: 0px;
+ }
+ /* Main Styles */
+body {
+    margin: 150px;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Arial';
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #ffffff;
+}
