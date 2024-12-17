@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "maxhallbeck.github.io",
+			"path": "."
+		},
+		{
+			"name": "cute",
+			"path": "../../../../../../Downloads/cute"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "maxhallbeck.github.io"
+	}
+}
