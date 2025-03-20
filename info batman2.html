@@ -98,6 +98,11 @@
             position: relative;
             top: -425px;
         }
+        button{
+           color: rgb(255, 230, 0); 
+           background-color: #000000;
+           border: 10px;
+        }
     </style>
 </head>
 
@@ -107,9 +112,14 @@
        
         <nav>
             <ul>
-                <li>Knapp 1</li>
-                <li>Knapp 2</li>
-                <li>Knapp 3</li>
+                <button onclick="scrollToTarget()">Gå ner på sidan</button>
+                <script>
+                    function scrollToTarget() {
+                        var target = document.getElementById('mål-plats');
+                        target.scrollIntoView({ behavior: 'smooth' }); 
+                        window.scrollBy({ top: 500, behavior: 'smooth' });
+                    }
+                    </script>
             </ul>
         </nav>
     </header>
@@ -124,14 +134,16 @@
             <img src="https://flm.nu/wp-content/uploads/2022/03/the_batman_2.jpg" alt="Batman i Gotham City">
         </section>
         <img src="jokerwhy.jpg" alt="Joker logo" class="joker">
-        <section class="text-section">
-            <article>
-            <h2>Fakta om Jokern</h2>
-            <p class="högertext">Joker är en av de mest kända och ikoniska skurkarna i serietidningshistorien. Han är Batmans ärkefiende och har genom åren framställts på många olika sätt i både serietidningar, filmer och TV-serier.</p>
-            <p class="högertext">The Jokers exakta bakgrund är ofta höljd i mystik. En av de mest populära ursprungshistorierna kommer från serietidningen The Killing Joke (1988), där han framställs som en misslyckad komiker som, efter en olycka med kemikalier, får sitt karakteristiska vita ansikte, röda leende och gröna hår.</p>
-            <p class="högertext">Jokern är känd för sin kaotiska och oförutsägbara natur. Han är en mästare på manipulation och använder ofta sin humor och intelligens för att orsaka kaos. Han saknar tydliga motiv, vilket gör honom ännu farligare</p>
-            </article>
-        </section>
+        <div id="mål-plats">
+            <section class="text-section">
+                <article>
+                <h2>Fakta om Jokern</h2>
+                <p class="högertext">Joker är en av de mest kända och ikoniska skurkarna i serietidningshistorien. Han är Batmans ärkefiende och har genom åren framställts på många olika sätt i både serietidningar, filmer och TV-serier.</p>
+                <p class="högertext">The Jokers exakta bakgrund är ofta höljd i mystik. En av de mest populära ursprungshistorierna kommer från serietidningen The Killing Joke (1988), där han framställs som en misslyckad komiker som, efter en olycka med kemikalier, får sitt karakteristiska vita ansikte, röda leende och gröna hår.</p>
+                <p class="högertext">Jokern är känd för sin kaotiska och oförutsägbara natur. Han är en mästare på manipulation och använder ofta sin humor och intelligens för att orsaka kaos. Han saknar tydliga motiv, vilket gör honom ännu farligare</p>
+                </article>
+            </section>
+        </div>
     </main>
 </body>
 
